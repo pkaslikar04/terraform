@@ -1,4 +1,9 @@
 # Terraform
+# Part 1:
+# Create and configure an EC2 Instance
+# Install a Rails application on that EC2 Instance
+# Connect that Rails application to a PostgreSQL database
+# Attach a Static IP and Domain to that server
 
 # Creating the project directory
 In a location of your choice, create a directory named 1-ec2-instance
