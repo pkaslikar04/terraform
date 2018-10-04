@@ -1,9 +1,9 @@
 # Terraform
 # Part 1:
-# Create and configure an EC2 Instance
-# Install a Rails application on that EC2 Instance
-# Connect that Rails application to a PostgreSQL database
-# Attach a Static IP and Domain to that server
+Create and configure an EC2 Instance
+Install a Rails application on that EC2 Instance
+Connect that Rails application to a PostgreSQL database
+Attach a Static IP and Domain to that server
 
 # Creating the project directory
 In a location of your choice, create a directory named 1-ec2-instance
@@ -17,10 +17,10 @@ In a location of your choice, create a directory named 1-ec2-instance
     - variables.tf
     - .gitignore
 	
-# Note: This is not a required directory structure. Terraform will automatically read all `.tf` files within the directory and figure out what to do. This is a file structure that has proven effective in a production environment.
+Note: This is not a required directory structure. Terraform will automatically read all `.tf` files within the directory and figure out what to do. This is a file structure that has proven effective in a production environment.
 
 
-# .gitignore
+.gitignore
 I would recommend creating a Git repository with these files. If you do so, you should start with this .gitignore content:
 
 # Compiled files
@@ -70,8 +70,8 @@ provider "aws" {
 }
 
 
-# In Terraform, Providers are interfaces to the services that maintain our Resources. For example - An EC2 Instance is a Resource provided by the Amazon Web Services Provider. A Git Repository is a Resource provided by the Github Provider.
-# Because Terraform is an open source tool, contributors can build custom providers to accomplish different tasks. For now, we will focus purely on the AWS provider and the resources it provides.
+In Terraform, Providers are interfaces to the services that maintain our Resources. For example - An EC2 Instance is a Resource provided by the Amazon Web Services Provider. A Git Repository is a Resource provided by the Github Provider.
+Because Terraform is an open source tool, contributors can build custom providers to accomplish different tasks. For now, we will focus purely on the AWS provider and the resources it provides.
 
 
 # aws_ami.tf
